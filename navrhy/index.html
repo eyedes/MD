@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="cs">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#171a18" name="theme-color"/>
+  <meta content="MD Modulov&eacute; domy &ndash; modern&iacute; modulov&eacute; bydlen&iacute;, inspirace a individu&aacute;ln&iacute; &rcaron;e&scaron;en&iacute;. Koncep&ccaron;n&iacute; n&aacute;vrh webu." name="description"/>
+  <title>
+   MD | Modulov&eacute; domy &ndash; prostor pro v&aacute;&scaron; p&rcaron;&iacute;b&ecaron;h
+  </title>
+  <link href="images/md_ikona.png" rel="icon"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root{--ink:#18201d;--muted:#6d746f;--cream:#f5f3ed;--gold:#b68a4a;--line:#dcded7}*{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}h1,h2,h3,h4,.nav-link{font-family:Manrope,sans-serif}a{text-decoration:none}.site-nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:.35s;background:rgba(249,248,243,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.06)}.site-nav.scrolled{padding:8px 0;box-shadow:0 9px 32px #15231c12}.brand img{width:145px;max-height:54px;object-fit:contain}.nav-link{font-size:13px;font-weight:700;letter-spacing:.02em;color:#28322c!important;margin:0 8px}.nav-link:hover{color:var(--gold)!important}.nav-cta,.btn-darkish{background:var(--ink);color:white;border:1px solid var(--ink);padding:14px 22px;border-radius:3px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;transition:.3s}.nav-cta:hover,.btn-darkish:hover{background:var(--gold);border-color:var(--gold);color:white}.btn-outline-lightish{display:inline-block;border:1px solid #fff9;color:#fff;padding:15px 25px;border-radius:3px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;transition:.3s}.btn-outline-lightish:hover{background:#fff;color:var(--ink)}.hero{min-height:90vh;position:relative;display:flex;align-items:end;background:#222;isolation:isolate;margin-top:82px}.hero-bg{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,#101815d9 0%,#121b17a8 44%,#111d1733 100%),url('assets/foto_05.webp');background-size:cover;background-position:center;transform:scale(1.03);animation:heroZoom 13s ease-out forwards}@keyframes heroZoom{to{transform:scale(1)}}.hero-content{padding:110px 0 110px;color:#fff}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}.hero .eyebrow{color:#e5bf81}.hero h1{font-size:clamp(48px,6.6vw,100px);line-height:1.05;letter-spacing:-.065em;font-weight:700;max-width:900px;margin:25px 0}.hero h1 em{font-style:normal;color:#e2bb80}.hero p{max-width:520px;font-size:17px;color:#e8e9e4;line-height:1.8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.scroll-label{position:absolute;bottom:35px;right:5%;color:#fff;font-size:11px;letter-spacing:.15em;display:flex;align-items:center;gap:14px}.scroll-label:before{content:'';height:1px;width:55px;background:#fff8}.section{padding:110px 0}.section-title{font-size:clamp(34px,4.5vw,61px);font-weight:700;letter-spacing:-.055em;line-height:1.14}.section-lead{font-size:16px;line-height:1.85;color:var(--muted)}.gold-line{height:2px;width:50px;background:var(--gold);margin:25px 0}.feature-box{padding:30px 25px;border-top:1px solid var(--line)}.feature-num{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.12em}.feature-box h3{font-size:19px;font-weight:700;margin-top:15px}.feature-box p{font-size:14px;color:var(--muted);line-height:1.8}.gallery{background:#eaece6}.model-card{background:#fff;overflow:hidden;height:100%;transition:transform .4s,box-shadow .4s}.model-card:hover{transform:translateY(-8px);box-shadow:0 20px 55px #16221b1a}.model-image{height:290px;overflow:hidden;position:relative;background:#dce0d9}.model-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s}.model-card:hover img{transform:scale(1.07)}.model-badge{position:absolute;top:20px;left:20px;background:#f7f7f0e8;padding:8px 12px;font-size:10px;font-weight:800;letter-spacing:.12em}.model-content{padding:28px}.model-content h3{font-size:24px;font-weight:800;letter-spacing:-.04em}.model-content p{font-size:14px;color:var(--muted);min-height:60px;line-height:1.7}.model-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee;padding-top:18px;font-size:12px;font-weight:800;letter-spacing:.06em}.arrow{color:var(--gold);font-size:24px}.split-img{width:100%;height:570px;object-fit:cover}.dark-section{background:#18211d;color:#fff}.dark-section .section-lead{color:#b7c2b8}.steps{border-top:1px solid #ffffff30;padding:23px 0;display:flex;gap:20px}.steps span{color:#caa56e;font-weight:800}.steps h4{font-size:17px}.steps p{font-size:13px;color:#b5c0b8}.mosaic img{width:100%;height:270px;object-fit:cover}.mosaic img.tall{height:560px}.quote-band{background:#c8ab7b;padding:65px 0}.quote-band h2{font-size:clamp(29px,4vw,52px);font-weight:800;letter-spacing:-.04em}.contact-box{background:#fff;padding:48px}.form-control{border-radius:2px;padding:13px;border:1px solid #d6d9d2;background:#fafbf8}.form-control:focus{border-color:var(--gold);box-shadow:0 0 0 .15rem #b68a4a24}.footer{background:#121916;color:#e5e9e2;padding:65px 0 30px}.footer img{width:160px;background:#f6f4ed;padding:8px;border-radius:2px}.footer p,.footer a{color:#aeb7af;font-size:13px}.footer a:hover{color:#d8ad71}.footer-line{border-top:1px solid #ffffff24;margin-top:45px;padding-top:20px;font-size:11px;color:#99a49c}.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.visible{opacity:1;transform:none}.img-hover{overflow:hidden}.img-hover img{transition:transform .8s}.img-hover:hover img{transform:scale(1.04)}.demo-ribbon{position:fixed;bottom:16px;left:16px;z-index:900;background:#f7f4e9f0;color:#3b413a;border:1px solid #d9d4c4;padding:9px 13px;border-radius:4px;font-size:11px;box-shadow:0 5px 20px #0002}.navbar-toggler{border:0}.navbar-toggler:focus{box-shadow:none}@media(max-width:991px){.hero{min-height:750px}.hero-content{padding:90px 0}.site-nav .navbar-collapse{padding:20px;background:#f9f8f3}.section{padding:75px 0}.split-img{height:400px}.mosaic img,.mosaic img.tall{height:260px}.contact-box{padding:25px}}@media(max-width:576px){.hero{min-height:670px}.hero h1{font-size:48px}.hero p{font-size:15px}.hero-actions a{width:100%;text-align:center}.scroll-label{display:none}.section{padding:62px 0}.model-image{height:250px}.demo-ribbon{font-size:9px;bottom:8px;left:8px;right:8px;text-align:center}}
+
+/* Navrh1: animated architectural backdrop, real photos from supplied brochure */
+.hero{isolation:isolate;overflow:hidden;background:#111b17}
+.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.hero-slide{position:absolute;inset:0;background-repeat:no-repeat;background-size:cover;background-position:65% center;opacity:0;animation:mdSlideshow 15s infinite,mdKenBurns 15s infinite;will-change:transform,opacity}
+.hero-slide-1{animation-delay:0s}.hero-slide-2{animation-delay:5s}.hero-slide-3{animation-delay:10s}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,22,18,.97) 0%,rgba(13,22,18,.87) 35%,rgba(13,22,18,.50) 66%,rgba(13,22,18,.25) 100%),linear-gradient(0deg,rgba(13,22,18,.42),transparent 45%)}
+@keyframes mdSlideshow{0%{opacity:0}5%,29%{opacity:1}34%,100%{opacity:0}}
+@keyframes mdKenBurns{0%{transform:scale(1)}33%{transform:scale(1.13)}100%{transform:scale(1.13)}}
+.site-nav .navbar-brand img{width:auto;max-width:185px;height:60px;object-fit:contain}
+@media(max-width:767px){.hero-slide{background-position:65% center}.hero-bg:after{background:linear-gradient(90deg,rgba(13,22,18,.93),rgba(13,22,18,.63))}.site-nav .navbar-brand img{max-width:135px;height:48px}}
+@media(prefers-reduced-motion:reduce){.hero-slide{animation:none;opacity:0;transform:none}.hero-slide-1{opacity:1}}
+  
+/* Mobile header: solid, stable and always above page content */
+.site-nav{isolation:isolate;transform:none!important;will-change:auto;z-index:9999}
+@media(max-width:991.98px){
+ .site-nav,.site-nav.scrolled{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%;background:#f9f8f3!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:0 2px 15px rgba(0,0,0,.09);padding:10px 0!important}
+ .site-nav .navbar-collapse{background:#f9f8f3}
+ .site-nav .navbar-brand img{height:48px!important}
+}
+</style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg site-nav" id="nav">
+   <div class="container">
+    <a class="navbar-brand brand" href="#uvod">
+     <img alt="MD Modulov&eacute; domy" src="images/md_logo.png"/>
+    </a>
+    <button aria-label="Otev&rcaron;&iacute;t navigaci" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="#o-nas">
+        O n&aacute;s
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#modely">
+        Na&scaron;e domy
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#postup">
+        Jak to funguje
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#inspirace">
+        Inspirace
+       </a>
+      </li>
+     </ul>
+     <a class="nav-cta d-none d-lg-inline-block" href="#kontakt">
+      Nez&aacute;vazn&aacute; popt&aacute;vka &nearrow;
+     </a>
+    </div>
+   </div>
+  </nav>
+  <header class="hero" id="uvod">
+   <div class="hero-bg">
+    <div class="hero-slide hero-slide-1" style="background-image:url('images/dum_01.webp')">
+    </div>
+    <div class="hero-slide hero-slide-2" style="background-image:url('images/dum_07.webp')">
+    </div>
+    <div class="hero-slide hero-slide-3" style="background-image:url('images/dum_11.webp')">
+    </div>
+   </div>
+   <div class="container hero-content">
+    <div class="eyebrow reveal">
+     MD / Modern&iacute; modulov&eacute; bydlen&iacute;
+    </div>
+    <h1 class="reveal">
+     M&eacute;n&ecaron; starost&iacute;.
+     <br/>
+     <em>
+      V&iacute;ce &zcaron;ivota.
+     </em>
+    </h1>
+    <p class="reveal">
+     Domov nemus&iacute; b&yacute;t slo&zcaron;it&yacute;. Objevte modern&iacute; modulov&eacute; domy, kter&eacute; d&aacute;vaj&iacute; prostor va&scaron;im pl&aacute;n&uring;m, pohodl&iacute; i svobod&ecaron;.
+    </p>
+    <div class="hero-actions reveal">
+     <a class="btn-darkish" href="#modely" style="background:#b68a4a;border-color:#b68a4a">
+      Prohl&eacute;dnout domy
+      <span class="ms-3">
+       &nearrow;
+      </span>
+     </a>
+     <a class="btn-outline-lightish" href="#o-nas">
+      Poznat n&aacute;&scaron; p&rcaron;&iacute;stup
+     </a>
+    </div>
+   </div>
+   <div class="scroll-label">
+    SCROLL TO EXPLORE
+   </div>
+  </header>
+  <section class="section" id="o-nas">
+   <div class="container">
+    <div class="row align-items-end g-5">
+     <div class="col-lg-6 reveal">
+      <div class="eyebrow">
+       01 / Nov&yacute; pohled na bydlen&iacute;
+      </div>
+      <h2 class="section-title mt-3">
+       Prostor, kter&yacute; se
+       <span style="color:#b68a4a">
+        p&rcaron;izp&uring;sob&iacute; v&aacute;m.
+       </span>
+      </h2>
+      <div class="gold-line">
+      </div>
+     </div>
+     <div class="col-lg-5 offset-lg-1 reveal">
+      <p class="section-lead">
+       Ka&zcaron;d&yacute; &ccaron;lov&ecaron;k m&aacute; jinou p&rcaron;edstavu o domov&ecaron;. N&ecaron;kdo hled&aacute; &uacute;tuln&eacute; v&iacute;kendov&eacute; &uacute;to&ccaron;i&scaron;t&ecaron;, jin&yacute; m&iacute;sto pro ka&zcaron;dodenn&iacute; &zcaron;ivot. Modulov&eacute; &rcaron;e&scaron;en&iacute; nab&iacute;z&iacute; svobodu vybrat si velikost, dispozici i vzhled podle vlastn&iacute;ch pot&rcaron;eb.
+      </p>
+      <a class="text-dark fw-bold" href="#kontakt">
+       Poj&dcaron;me probrat v&aacute;&scaron; projekt
+       <span style="color:var(--gold)">
+        &nearrow;
+       </span>
+      </a>
+     </div>
+    </div>
+    <div class="row mt-5">
+     <div class="col-md-4 reveal">
+      <div class="feature-box">
+       <span class="feature-num">
+        01 /
+       </span>
+       <h3>
+        Promy&scaron;len&yacute; prostor
+       </h3>
+       <p>
+        Chytr&eacute; dispozice, kter&eacute; vyu&zcaron;&iacute;vaj&iacute; ka&zcaron;d&yacute; metr a nech&aacute;vaj&iacute; vyniknout to podstatn&eacute;.
+       </p>
+      </div>
+     </div>
+     <div class="col-md-4 reveal">
+      <div class="feature-box">
+       <span class="feature-num">
+        02 /
+       </span>
+       <h3>
+        Styl podle v&aacute;s
+       </h3>
+       <p>
+        Od &ccaron;ist&yacute;ch lini&iacute; po &uacute;tuln&eacute; d&rcaron;ev&ecaron;n&eacute; dekory. Vyberte si vzhled, kter&yacute; je v&aacute;m bl&iacute;zk&yacute;.
+       </p>
+      </div>
+     </div>
+     <div class="col-md-4 reveal">
+      <div class="feature-box">
+       <span class="feature-num">
+        03 /
+       </span>
+       <h3>
+        Flexibiln&iacute; vyu&zcaron;it&iacute;
+       </h3>
+       <p>
+        Bydlen&iacute;, rekreace, kancel&aacute;&rcaron; nebo z&aacute;zem&iacute; pro hosty. Jeden koncept, mnoho mo&zcaron;nost&iacute;.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="section gallery" id="modely">
+   <div class="container">
+    <div class="row align-items-end mb-5">
+     <div class="col-lg-8 reveal">
+      <div class="eyebrow">
+       02 / Vyberte si sv&uring;j prostor
+      </div>
+      <h2 class="section-title mt-3">
+       Mal&eacute; rozm&ecaron;ry.
+       <br/>
+       Velk&eacute; mo&zcaron;nosti.
+      </h2>
+     </div>
+     <div class="col-lg-4 reveal">
+      <p class="section-lead">
+       Uk&aacute;zkov&yacute; v&yacute;b&ecaron;r &rcaron;e&scaron;en&iacute; z dodan&eacute;ho katalogu. Konkr&eacute;tn&iacute; parametry a ceny dopln&iacute;me po konzultaci.
+      </p>
+     </div>
+    </div>
+    <div class="row g-4">
+     <div class="col-md-6 col-lg-4 reveal">
+      <article class="model-card">
+       <div class="model-image">
+        <img alt="Uk&aacute;zka modulov&eacute;ho domu MINI" loading="lazy" src="images/dum_01.webp"/>
+        <span class="model-badge">
+         KATALOG / MINI
+        </span>
+       </div>
+       <div class="model-content">
+        <h3>
+         MD MINI
+        </h3>
+        <p>
+         Kompaktn&iacute; prostor pro odpo&ccaron;inek, pr&aacute;ci nebo prvn&iacute; vlastn&iacute; z&aacute;zem&iacute;.
+        </p>
+        <div class="model-footer">
+         <span>
+          INDIVIDU&Aacute;LN&Iacute; NAB&Iacute;DKA
+         </span>
+         <a aria-label="Poptat MINI" class="arrow" href="#kontakt">
+          &nearrow;
+         </a>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-lg-4 reveal">
+      <article class="model-card">
+       <div class="model-image">
+        <img alt="Uk&aacute;zka modulov&eacute;ho domu 20 FT" loading="lazy" src="images/dum_04.webp"/>
+        <span class="model-badge">
+         KATALOG / 20 FT
+        </span>
+       </div>
+       <div class="model-content">
+        <h3>
+         MD 20 FT
+        </h3>
+        <p>
+         Praktick&eacute; &rcaron;e&scaron;en&iacute; pro pohodln&yacute; ka&zcaron;dodenn&iacute; &zcaron;ivot.
+        </p>
+        <div class="model-footer">
+         <span>
+          INDIVIDU&Aacute;LN&Iacute; NAB&Iacute;DKA
+         </span>
+         <a aria-label="Poptat 20 FT" class="arrow" href="#kontakt">
+          &nearrow;
+         </a>
+        </div>
+       </div>
+      </article>
+     </div>
+     <div class="col-md-6 col-lg-4 reveal">
+      <article class="model-card">
+       <div class="model-image">
+        <img alt="Uk&aacute;zka modulov&eacute;ho domu 40 FT" loading="lazy" src="images/dum_07.webp"/>
+        <span class="model-badge">
+         KATALOG / 40 FT
+        </span>
+       </div>
+       <div class="model-content">
+        <h3>
+         MD 40 FT
+        </h3>
+        <p>
+         V&iacute;ce m&iacute;sta pro v&ecaron;t&scaron;&iacute; pl&aacute;ny a individu&aacute;ln&iacute; uspo&rcaron;&aacute;d&aacute;n&iacute;.
+        </p>
+        <div class="model-footer">
+         <span>
+          INDIVIDU&Aacute;LN&Iacute; NAB&Iacute;DKA
+         </span>
+         <a aria-label="Poptat 40 FT" class="arrow" href="#kontakt">
+          &nearrow;
+         </a>
+        </div>
+       </div>
+      </article>
+     </div>
+    </div>
+    <div class="text-center mt-5 reveal">
+     <a class="btn-darkish" href="#kontakt">
+      Pom&uring;&zcaron;eme v&aacute;m s v&yacute;b&ecaron;rem &nearrow;
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="section dark-section" id="postup">
+   <div class="container">
+    <div class="row g-5 align-items-center">
+     <div class="col-lg-6 reveal">
+      <div class="eyebrow">
+       03 / Jednodu&scaron;e od prvn&iacute; my&scaron;lenky
+      </div>
+      <h2 class="section-title mt-3">
+       V&aacute;&scaron; nov&yacute; prostor.
+       <br/>
+       Na&scaron;e spole&ccaron;n&aacute; cesta.
+      </h2>
+      <p class="section-lead mt-4 mb-5">
+       Ka&zcaron;d&yacute; projekt za&ccaron;&iacute;n&aacute; rozhovorem. Spole&ccaron;n&ecaron; najdeme &rcaron;e&scaron;en&iacute;, kter&eacute; bude odpov&iacute;dat va&scaron;im p&rcaron;edstav&aacute;m a mo&zcaron;nostem.
+      </p>
+      <div class="steps">
+       <span>
+        01
+       </span>
+       <div>
+        <h4>
+         &Rcaron;eknete n&aacute;m svou p&rcaron;edstavu
+        </h4>
+        <p>
+         Probereme &uacute;&ccaron;el, rozm&ecaron;ry a po&zcaron;adovan&eacute; vybaven&iacute;.
+        </p>
+       </div>
+      </div>
+      <div class="steps">
+       <span>
+        02
+       </span>
+       <div>
+        <h4>
+         Vybereme vhodn&eacute; &rcaron;e&scaron;en&iacute;
+        </h4>
+        <p>
+         Pod&iacute;v&aacute;me se na mo&zcaron;nosti dispozic, materi&aacute;l&uring; a proveden&iacute;.
+        </p>
+       </div>
+      </div>
+      <div class="steps">
+       <span>
+        03
+       </span>
+       <div>
+        <h4>
+         Domluv&iacute;me dal&scaron;&iacute; postup
+        </h4>
+        <p>
+         Up&rcaron;esn&iacute;me dostupnost, podm&iacute;nky a individu&aacute;ln&iacute; nab&iacute;dku.
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-6 reveal">
+      <div class="img-hover">
+       <img alt="Uk&aacute;zka modulov&eacute;ho domu z katalogu" class="split-img" loading="lazy" src="images/dum_02.webp"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="section" id="inspirace">
+   <div class="container">
+    <div class="row align-items-end mb-5">
+     <div class="col-lg-8 reveal">
+      <div class="eyebrow">
+       04 / Inspirace z katalogu
+      </div>
+      <h2 class="section-title mt-3">
+       P&rcaron;edstavte si
+       <br/>
+       sv&eacute; m&iacute;sto.
+      </h2>
+     </div>
+     <div class="col-lg-4 reveal">
+      <p class="section-lead">
+       R&uring;zn&eacute; fas&aacute;dy, terasy a vybaven&iacute;. Najd&ecaron;te inspiraci pro prostor, ve kter&eacute;m se budete c&iacute;tit doma.
+      </p>
+     </div>
+    </div>
+    <div class="row g-3 mosaic">
+     <div class="col-md-6 reveal img-hover">
+      <img alt="Exteri&eacute;r modulov&eacute;ho domu" class="tall" loading="lazy" src="images/dum_08.webp"/>
+     </div>
+     <div class="col-md-6">
+      <div class="row g-3">
+       <div class="col-12 reveal img-hover">
+        <img alt="Modulov&yacute; d&uring;m s terasou" loading="lazy" src="images/terasa_01.webp"/>
+       </div>
+       <div class="col-12 reveal img-hover">
+        <img alt="Dal&scaron;&iacute; varianta modulov&eacute;ho domu" loading="lazy" src="images/dum_11.webp"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div class="quote-band">
+   <div class="container d-lg-flex justify-content-between align-items-center gap-5">
+    <h2 class="mb-4 mb-lg-0">
+     Mo&zcaron;n&aacute; pr&aacute;v&ecaron; tady za&ccaron;&iacute;n&aacute;
+     <br/>
+     v&aacute;&scaron; nov&yacute; p&rcaron;&iacute;b&ecaron;h.
+    </h2>
+    <a class="btn-darkish flex-shrink-0" href="#kontakt">
+     Napi&scaron;te n&aacute;m &nearrow;
+    </a>
+   </div>
+  </div>
+  <section class="section" id="kontakt">
+   <div class="container">
+    <div class="row g-5 align-items-center">
+     <div class="col-lg-5 reveal">
+      <div class="eyebrow">
+       05 / Jsme tu pro v&aacute;s
+      </div>
+      <h2 class="section-title mt-3">
+       Poj&dcaron;me vytvo&rcaron;it
+       <br/>
+       n&ecaron;co
+       <span style="color:var(--gold)">
+        va&scaron;eho.
+       </span>
+      </h2>
+      <p class="section-lead mt-4">
+       M&aacute;te vyhl&eacute;dnut&yacute; model, nebo teprve hled&aacute;te inspiraci? Napi&scaron;te n&aacute;m, co pl&aacute;nujete. Ozveme se a spole&ccaron;n&ecaron; probereme mo&zcaron;nosti.
+      </p>
+      <div class="gold-line">
+      </div>
+      <p class="small text-muted">
+       Kontaktn&iacute; &uacute;daje budou dopln&ecaron;ny po schv&aacute;len&iacute; n&aacute;vrhu.
+      </p>
+     </div>
+     <div class="col-lg-7 reveal">
+      <div class="contact-box shadow-sm">
+       <h3 class="fw-bold mb-4">
+        Nez&aacute;vazn&aacute; popt&aacute;vka
+       </h3>
+       <form id="contactForm">
+        <div class="row g-3">
+         <div class="col-md-6">
+          <label class="form-label small">
+           Jm&eacute;no a p&rcaron;&iacute;jmen&iacute;
+          </label>
+          <input class="form-control" placeholder="Va&scaron;e jm&eacute;no" required=""/>
+         </div>
+         <div class="col-md-6">
+          <label class="form-label small">
+           E-mail
+          </label>
+          <input class="form-control" placeholder="vas@email.cz" required="" type="email"/>
+         </div>
+         <div class="col-12">
+          <label class="form-label small">
+           O co m&aacute;te z&aacute;jem?
+          </label>
+          <select class="form-control">
+           <option>
+            Modulov&yacute; d&uring;m k bydlen&iacute;
+           </option>
+           <option>
+            Rekrea&ccaron;n&iacute; d&uring;m
+           </option>
+           <option>
+            Zahradn&iacute; studio / kancel&aacute;&rcaron;
+           </option>
+           <option>
+            Jin&eacute; &rcaron;e&scaron;en&iacute;
+           </option>
+          </select>
+         </div>
+         <div class="col-12">
+          <label class="form-label small">
+           Va&scaron;e zpr&aacute;va
+          </label>
+          <textarea class="form-control" placeholder="Napi&scaron;te n&aacute;m n&ecaron;co o sv&eacute;m projektu..." required="" rows="4"></textarea>
+         </div>
+         <div class="col-12">
+          <button class="btn-darkish w-100" type="submit">
+           Odeslat popt&aacute;vku &nearrow;
+          </button>
+          <p class="small text-muted mt-3 mb-0">
+           Uk&aacute;zkov&yacute; formul&aacute;&rcaron; &ndash; odes&iacute;l&aacute;n&iacute; zat&iacute;m nen&iacute; p&rcaron;ipojeno.
+          </p>
+         </div>
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="footer">
+   <div class="container">
+    <div class="row g-4">
+     <div class="col-lg-6">
+      <img alt="MD Modulov&eacute; domy" src="images/md_logo.png"/>
+      <p class="mt-4" style="max-width:350px">
+       Modern&iacute; modulov&eacute; bydlen&iacute; s d&uring;razem na prostor, styl a individu&aacute;ln&iacute; p&rcaron;&iacute;stup.
+      </p>
+     </div>
+     <div class="col-6 col-lg-3">
+      <h6 class="fw-bold mb-3">
+       Prozkoumejte
+      </h6>
+      <p>
+       <a href="#modely">
+        Na&scaron;e domy
+       </a>
+      </p>
+      <p>
+       <a href="#postup">
+        Jak to funguje
+       </a>
+      </p>
+      <p>
+       <a href="#inspirace">
+        Inspirace
+       </a>
+      </p>
+     </div>
+     <div class="col-6 col-lg-3">
+      <h6 class="fw-bold mb-3">
+       Kontakt
+      </h6>
+      <p>
+       Kontakty dopln&iacute;me
+      </p>
+      <p>
+       <a href="#kontakt">
+        Napsat popt&aacute;vku &nearrow;
+       </a>
+      </p>
+     </div>
+    </div>
+    <div class="footer-line d-flex flex-wrap justify-content-between gap-2">
+     <span>
+      &copy;
+      <span id="year">
+      </span>
+      MD Modulov&eacute; domy. Koncep&ccaron;n&iacute; n&aacute;vrh.
+     </span>
+     <span>
+      Webdesign: EyEDes
+     </span>
+    </div>
+   </div>
+  </footer>
+  <div class="demo-ribbon">
+   DEMO N&Aacute;VRH &bull; Texty, n&aacute;zvy model&uring; a parametry jsou ilustrativn&iacute;
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+   document.getElementById('year').textContent=new Date().getFullYear();const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>30),{passive:true});const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));document.querySelectorAll('.navbar-nav .nav-link').forEach(a=>a.addEventListener('click',()=>{const el=document.querySelector('.navbar-collapse');if(el.classList.contains('show'))bootstrap.Collapse.getOrCreateInstance(el).hide()}));document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();alert('Toto je pouze grafický návrh. Formulář zatím neodesílá žádné údaje.');});
+  </script>
+ </body>
+</html>
+
